@@ -13,11 +13,11 @@ def _FillTPointNumber(driver, t_number):
         "//input[@id='r-point_t']/following-sibling::label").click()
     if len(t_number) == 16:
         driver.find_element_by_xpath(
-            "input[@id='point_t_16']/following-sibling::label").click()
+            "//input[@id='point_t_16']/following-sibling::label").click()
         driver.find_element_by_id('fi_point_t16').send_keys(t_number)
     elif len(t_number) == 9:
         driver.find_element_by_xpath(
-            "input[@id='point_t_9']/following-sibling::label").click()
+            "//input[@id='fi_point_t_9']/following-sibling::label").click()
         driver.find_element_by_id('fi_point_t9').send_keys(t_number)
     else:
         logging.error(
