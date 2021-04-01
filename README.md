@@ -32,6 +32,13 @@ pipenv run python ./autoentry.py --driver=/path/to/chromedriver \
 * date_of_birth
   * 生年月日 YYYY-MM-DD
 * tpoint_num
-  * 16桁のTポイントカード番号
+  * 16, 9桁のTポイントカード番号
+* dpoint_num
+  * 12桁のDポイント番号
+* nanaco_num
+  * 16桁のnanaco番号
 * email
   * ポイントエントリーなどのメールを受け取ったメールアドレス
+
+ポイントナンバーは複数指定された場合、プログラムが一つ選んでエントリーします。
+コマンドラインフラグの説明
